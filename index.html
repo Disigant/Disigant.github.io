@@ -3,37 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinicius Disigant - Portfólio</title>
+    <title>Vinicius Disigant - Systems Engineer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Vinicius</div>
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-dot"></span>
+                <span>Vinicius Disigant</span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificados</a></li>
+                <li><a href="#posts">Posts</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-            <button class="theme-toggle" id="themeToggle">🌙</button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
+        <div class="hero-container">
             <div class="hero-content">
-                <h1>Olá, sou Vinicius!</h1>
-                <p class="subtitle">Engenheiro | Desenvolvedor | Inovador</p>
-                <p class="description">
-                    Apaixonado por tecnologia e criação de soluções que fazem diferença.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
+                <div class="profile-image">
+                    <div class="image-placeholder">V</div>
+                </div>
+                <h1>Vinicius Disigant</h1>
+                <p class="role">Systems Engineer @ Extreme Networks</p>
+                <p class="bio">Engenheiro de Sistemas | Brasil</p>
+                <div class="social-links-hero">
+                    <a href="https://www.linkedin.com/in/vinicius-disigant/" target="_blank" class="social-btn" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.40-1.4a1.4 1.4 0 0 1 1.4 1.4v4.34h2.5M6.5 8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m1.237 13.5h-2.5V9.242h2.5V21.5Z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/disigant_/" target="_blank" class="social-btn" title="Instagram Pessoal">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2m-.3 2C5.2 4 4 5.2 4 6.5v11C4 18.8 5.2 20 6.5 20h11c1.3 0 2.5-1.2 2.5-2.5v-11C20 5.2 18.8 4 17.5 4h-11M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6m5.5-3.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/disigant_motocicletas/" target="_blank" class="social-btn" title="Instagram Motos">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2m-.3 2C5.2 4 4 5.2 4 6.5v11C4 18.8 5.2 20 6.5 20h11c1.3 0 2.5-1.2 2.5-2.5v-11C20 5.2 18.8 4 17.5 4h-11M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6m5.5-3.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -43,126 +59,143 @@
     <section id="about" class="about">
         <div class="container">
             <h2>Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Sou um profissional com experiência em tecnologia e redes, trabalhando na Extreme Networks.
-                        Gosto de resolver problemas complexos e aprender novas tecnologias constantemente.
-                    </p>
-                    <p>
-                        Quando não estou programando, estou explorando novas ferramentas e tendências em tech.
-                    </p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">23</div>
+                    <h3>Idade</h3>
+                    <p>Profissional jovem e dinâmico</p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>5+</h3>
-                        <p>Anos de Experiência</p>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
                     </div>
-                    <div class="stat">
-                        <h3>10+</h3>
-                        <p>Projetos Completos</p>
-                    </div>
-                    <div class="stat">
-                        <h3>100%</h3>
-                        <p>Dedicação</p>
-                    </div>
+                    <h3>Systems Engineer</h3>
+                    <p>Extreme Networks Brasil</p>
                 </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Brasil</h3>
+                    <p>São Paulo</p>
+                </div>
+            </div>
+            <div class="about-description">
+                <p>Systems Engineer na Extreme Networks com foco em soluções de rede e infraestrutura. Apaixonado por tecnologia, inovação e motocicletas. Sempre em busca de novas formas de resolver problemas complexos e aprender.</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
         <div class="container">
-            <h2>Projetos Destacados</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200?text=Projeto+1" alt="Projeto 1">
+            <h2>Certificações</h2>
+            <div class="certificates-carousel">
+                <button class="carousel-btn prev" id="certPrev">❮</button>
+                <div class="carousel-container">
+                    <div class="certificates-grid">
+                        <div class="cert-card">
+                            <div class="cert-header">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                                </svg>
+                            </div>
+                            <h3>Certificado 1</h3>
+                            <p class="cert-issuer">Emitido por</p>
+                            <p class="cert-date">2024</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-header">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                                </svg>
+                            </div>
+                            <h3>Certificado 2</h3>
+                            <p class="cert-issuer">Emitido por</p>
+                            <p class="cert-date">2024</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-header">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                                </svg>
+                            </div>
+                            <h3>Certificado 3</h3>
+                            <p class="cert-issuer">Emitido por</p>
+                            <p class="cert-date">2024</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-header">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                                </svg>
+                            </div>
+                            <h3>Certificado 4</h3>
+                            <p class="cert-issuer">Emitido por</p>
+                            <p class="cert-date">2024</p>
+                        </div>
                     </div>
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do seu primeiro projeto e tecnologias usadas.</p>
-                    <div class="project-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                    <a href="#" class="project-link">Ver Projeto →</a>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200?text=Projeto+2" alt="Projeto 2">
-                    </div>
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do seu segundo projeto e tecnologias usadas.</p>
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
-                    </div>
-                    <a href="#" class="project-link">Ver Projeto →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200?text=Projeto+3" alt="Projeto 3">
-                    </div>
-                    <h3>Projeto 3</h3>
-                    <p>Descrição do seu terceiro projeto e tecnologias usadas.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">API</span>
-                        <span class="tag">Cloud</span>
-                    </div>
-                    <a href="#" class="project-link">Ver Projeto →</a>
-                </div>
+                <button class="carousel-btn next" id="certNext">❯</button>
             </div>
+            <p class="carousel-note">Deslize para ver mais certificações</p>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Posts Section -->
+    <section id="posts" class="posts">
         <div class="container">
-            <h2>Habilidades</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Responsivo Design</li>
-                    </ul>
+            <h2>Posts do Instagram</h2>
+            <div class="posts-carousel">
+                <button class="carousel-btn prev" id="postsPrev">❮</button>
+                <div class="carousel-container">
+                    <div class="posts-grid">
+                        <div class="post-card">
+                            <div class="post-image">
+                                <div class="image-placeholder-post">📸</div>
+                            </div>
+                            <div class="post-info">
+                                <p class="post-caption">Seu post aqui</p>
+                                <p class="post-date">@disigant_</p>
+                            </div>
+                        </div>
+                        <div class="post-card">
+                            <div class="post-image">
+                                <div class="image-placeholder-post">🏍️</div>
+                            </div>
+                            <div class="post-info">
+                                <p class="post-caption">Sua moto aqui</p>
+                                <p class="post-date">@disigant_motocicletas</p>
+                            </div>
+                        </div>
+                        <div class="post-card">
+                            <div class="post-image">
+                                <div class="image-placeholder-post">📸</div>
+                            </div>
+                            <div class="post-info">
+                                <p class="post-caption">Seu post aqui</p>
+                                <p class="post-date">@disigant_</p>
+                            </div>
+                        </div>
+                        <div class="post-card">
+                            <div class="post-image">
+                                <div class="image-placeholder-post">🏍️</div>
+                            </div>
+                            <div class="post-info">
+                                <p class="post-caption">Sua moto aqui</p>
+                                <p class="post-date">@disigant_motocicletas</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>APIs REST</li>
-                        <li>Databases</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>DevOps & Tools</h3>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>Docker</li>
-                        <li>Cloud Services</li>
-                        <li>CI/CD</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Outros</h3>
-                    <ul>
-                        <li>Redes</li>
-                        <li>Extreme Networks</li>
-                        <li>Problem Solving</li>
-                        <li>Comunicação</li>
-                    </ul>
-                </div>
+                <button class="carousel-btn next" id="postsNext">❯</button>
             </div>
+            <p class="carousel-note">Deslize para ver mais posts</p>
         </div>
     </section>
 
@@ -170,44 +203,32 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Entre em Contato</h2>
-            <p class="contact-subtitle">Tem uma pergunta ou proposta? Ficarei feliz em ouvir!</p>
-
-            <div class="contact-content">
-                <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="Seu Nome" required>
-                    <input type="email" placeholder="Seu Email" required>
-                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                </form>
-
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h4>Email</h4>
-                        <a href="mailto:vdisigant@extremenetworks.com">vdisigant@extremenetworks.com</a>
+            <div class="contact-grid">
+                <a href="https://www.linkedin.com/in/vinicius-disigant/" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.40-1.4a1.4 1.4 0 0 1 1.4 1.4v4.34h2.5M6.5 8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m1.237 13.5h-2.5V9.242h2.5V21.5Z"/>
+                        </svg>
                     </div>
-                    <div class="contact-item">
-                        <h4>Social</h4>
-                        <div class="social-links">
-                            <a href="https://github.com/Disigant" target="_blank">GitHub</a>
-                            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                            <a href="https://twitter.com" target="_blank">Twitter</a>
-                        </div>
+                    <h3>LinkedIn</h3>
+                    <p>Vinicius Disigant</p>
+                </a>
+                <a href="mailto:vinicius@disigant.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
                     </div>
-                    <div class="contact-item">
-                        <h4>Localização</h4>
-                        <p>São Paulo, Brasil</p>
-                    </div>
-                </div>
+                    <h3>Email</h3>
+                    <p>vinicius@disigant.com</p>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Vinicius Disigant. Todos os direitos reservados.</p>
-            <p>Feito com ❤️ usando HTML, CSS e JavaScript</p>
-        </div>
+        <p>&copy; 2026 Vinicius Disigant. Desenvolvido com ❤️</p>
     </footer>
 
     <script src="script.js"></script>
