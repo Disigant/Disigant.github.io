@@ -32,25 +32,32 @@ if (certPrev && certNext && certificatesGrid) {
     });
 }
 
-// Carousel Posts
+// Carousel Motos
 const postsPrev = document.getElementById('postsPrev');
 const postsNext = document.getElementById('postsNext');
-const postsGrid = document.querySelector('.posts-grid');
+const motoSlides = document.querySelectorAll('.moto-slide');
 
-if (postsPrev && postsNext && postsGrid) {
+let currentMoto = 0;
+
+function showMoto(index) {
+    motoSlides.forEach(slide => slide.classList.remove('active'));
+    if (motoSlides[index]) {
+        motoSlides[index].classList.add('active');
+    }
+}
+
+if (postsPrev && postsNext) {
     postsPrev.addEventListener('click', () => {
-        postsGrid.scrollBy({
-            left: -220,
-            behavior: 'smooth'
-        });
+        currentMoto = (currentMoto - 1 + motoSlides.length) % motoSlides.length;
+        showMoto(currentMoto);
     });
 
     postsNext.addEventListener('click', () => {
-        postsGrid.scrollBy({
-            left: 220,
-            behavior: 'smooth'
-        });
+        currentMoto = (currentMoto + 1) % motoSlides.length;
+        showMoto(currentMoto);
     });
+
+    showMoto(0);
 }
 
 // Animação ao scroll para elementos
