@@ -39,22 +39,27 @@ const motoSlides = document.querySelectorAll('.moto-slide');
 
 let currentMoto = 0;
 
-function showMoto(index) {
-    motoSlides.forEach(slide => slide.classList.remove('active'));
+function showMoto(index, direction = 'next') {
+    motoSlides.forEach(slide => {
+        slide.classList.remove('active', 'prev');
+    });
     if (motoSlides[index]) {
         motoSlides[index].classList.add('active');
+        if (direction === 'prev') {
+            motoSlides[index].classList.add('prev');
+        }
     }
 }
 
 if (postsPrev && postsNext) {
     postsPrev.addEventListener('click', () => {
         currentMoto = (currentMoto - 1 + motoSlides.length) % motoSlides.length;
-        showMoto(currentMoto);
+        showMoto(currentMoto, 'prev');
     });
 
     postsNext.addEventListener('click', () => {
         currentMoto = (currentMoto + 1) % motoSlides.length;
-        showMoto(currentMoto);
+        showMoto(currentMoto, 'next');
     });
 
     showMoto(0);

@@ -487,12 +487,55 @@ body {
     margin: 2rem 0;
 }
 
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutToLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideOutToRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
 .moto-slide {
     display: none;
     width: 100%;
     min-height: 500px;
     border-radius: 12px;
-    border: 1px solid var(--border-color);
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
@@ -500,7 +543,6 @@ body {
     text-decoration: none;
     color: inherit;
     position: relative;
-    transition: all 0.3s ease;
     flex-direction: column;
     justify-content: flex-end;
 }
@@ -508,6 +550,11 @@ body {
 .moto-slide.active {
     display: flex;
     align-items: flex-end;
+    animation: slideInFromRight 0.5s ease-out;
+}
+
+.moto-slide.active.prev {
+    animation: slideInFromLeft 0.5s ease-out;
 }
 
 .moto-info {
