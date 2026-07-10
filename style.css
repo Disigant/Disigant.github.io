@@ -463,6 +463,19 @@ body {
     font-size: 0.9rem;
 }
 
+.posts-subtitle {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.instagram-embed-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 /* ===== Posts Section ===== */
 .post-card {
     background: var(--bg-light);
