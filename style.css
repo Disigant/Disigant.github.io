@@ -429,9 +429,21 @@ body {
 }
 
 .cert-date {
-    color: var(--primary-color);
-    font-weight: 600;
-    font-size: 0.9rem;
+    display: none;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cert-header img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .carousel-note {
