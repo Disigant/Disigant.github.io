@@ -484,6 +484,10 @@ body {
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
 }
 
 .post-card:hover {
